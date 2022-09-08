@@ -54,7 +54,7 @@ def match_file_mult_dir(dir_list, pattern, key_pattern=None, verbose=True):
 
     # print files in each dir
     if verbose:
-        print('Find files number:')
+        print('Number of files:')
         for n, i in enumerate(dir_dic_list):
             print('\t{}: {}'.format(dir_list[n], len(i.keys())))
 
@@ -218,22 +218,16 @@ class SegmentModeEvaluation:
 def main():
     time_op = time.time()
     # set parameter
-    # pred_mask_dir = '/gpfs/lab/liangmeng/members/liyifan/hematoma/TJ_data/postprocess/predict_out/' \
-    #                 'nnU_607_REUnet/fold_4/predict/'
-    # log_out_dir = '/gpfs/lab/liangmeng/members/liyifan/hematoma/TJ_data/postprocess/predict_out/' \
-    #               'nnU_607_REUnet/fold_4/'
+    true_mask_dir = 'TRUE_MASK_DIR'  # ------------------> must modified by user
 
-    # radiologist cor test VS nnu pred ------------------------------------------------------------------------
-    true_mask_dir = '/gpfs/lab/liangmeng/members/liyifan/hematoma/TJ_data/mask_cor_test/ICH_IVH_mask/'
-
-    pred_mask_dir = '/gpfs/lab/liangmeng/members/liyifan/hematoma/TJ_data/postprocess/predict_out/' \
-                    'nnU_607_3d_res_dm/fold_4/predict/'
-    log_out_dir = '/gpfs/lab/liangmeng/members/liyifan/hematoma/TJ_data/mask_cor_test/pred_vs_cortest/'
+    pred_mask_dir = 'PREDICT_MASK_DIR'  # ------------------> must modified by user
+    log_out_dir = 'LOG_OUT_DIR'  # ------------------> must modified by user
 
     # other parameters -------------------------------------------------------------------------------------------
     log_out_name = 'eval_log.csv'
 
-    pattern = r'(?:UNE|EXP)\d{5}.*\.nii\.gz'
+    # pattern = r'(?:UNE|EXP)\d{5}.*\.nii\.gz'
+    pattern = r'.*\.nii\.gz'
 
     mask_label_dic = {1: 'ICH', 2: 'IVH'}  # key is number in mask, value is meaning of label
 
