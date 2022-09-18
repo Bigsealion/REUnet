@@ -11,7 +11,7 @@ def copytree(src, dst, symlinks=False, ignore=None):
         s = os.path.join(src, item)
         d = os.path.join(dst, item)
         if os.path.isdir(s):
-            shutil.copytree(s, d, symlinks, ignore)
+            shutil.copytree(s, d, symlinks, ignore, dirs_exist_ok=True)
         else:
             shutil.copy2(s, d)
 
@@ -30,8 +30,11 @@ def main():
     # cp files
     copytree(REU_model_dir, nnu_dir)  # netrwork
     copytree(REU_preprocessed_dir, preprocessed_dir)  # preprocesssing
-    copytree(REU_trained_model_dir, trained_model_path)  # trained model parameters
 
+    print('nnu dir: {}'.format(nnu_dir))
+    print('REU_model_dir: {}'.format(REU_model_dir))
+    print('REU_preprocessed_dir: {}'.format(REU_preprocessed_dir))
+    # print('REU_trained_model_dir: {}'.format(REU_trained_model_dir))
     print('REUnet is installed')
 
 
