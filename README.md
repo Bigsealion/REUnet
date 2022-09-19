@@ -8,7 +8,9 @@ Download [`StripSkullCT`](https://github.com/WuChanada/StripSkullCT) for brain e
 
 # Installation
 After installing `nnU-Net`, you can install `REunet` by this command: `python ./REU_install`.
- 
+
+# load REUnet trained models
+run `python ./download_REUnet_trained_models.py`
 
 # Usage
 After installation, you can get ICH and IVH segmentation by following steps:
