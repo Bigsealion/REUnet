@@ -26,6 +26,7 @@ After installation, you can get ICH and IVH segmentation by following steps:
  ```
 ip=INPUT_FOLDER 
 op=OUTPUT_FOLDER 
+fold=FOLD  # choose from [0, 1, 2, 3, 4]
 
-nnUNet_predict -i ${ip} -o ${op} -t 607 -m 3d_fullres -f 4 -chk model_best -tr nnUNetTrainerV2_REUNet -p nnUNetPlans_REUNet_v2.1 --save_npz
+nnUNet_predict -i ${ip} -o ${op} -t 607 -m 3d_fullres -f ${fold} -chk model_best -tr nnUNetTrainerV2_REUNet -p nnUNetPlans_REUNet_v2.1 --save_npz
 ```
