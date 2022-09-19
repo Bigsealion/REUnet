@@ -9,7 +9,7 @@ Download [`StripSkullCT`](https://github.com/WuChanada/StripSkullCT) for brain e
 # Installation
 After installing `nnU-Net`, you can install `REUnet` by this command: `python ./install_REUnet.py`.
 
-# load REUnet trained models
+# Getting REUnet trained models
 Running `python ./download_REUnet_trained_models.py` to download REUnet trained models.
 
 This contains 5 models produced by 5 fold cross-validation, and the size is 3.1GB.
