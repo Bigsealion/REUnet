@@ -7,10 +7,12 @@ Install [`nnU-Net`](https://github.com/MIC-DKFZ/nnUNet), which is the framework 
 Download [`StripSkullCT`](https://github.com/WuChanada/StripSkullCT) for brain extraction.
 
 # Installation
-After installing `nnU-Net`, you can install `REunet` by this command: `python ./REU_install`.
+After installing `nnU-Net`, you can install `REUnet` by this command: `python ./install_REUnet.py`.
 
 # load REUnet trained models
-run `python ./download_REUnet_trained_models.py`
+Running `python ./download_REUnet_trained_models.py` to download REUnet trained models.
+
+This contains 5 models produced by 5 fold cross-validation, and the size is 3.1GB.
 
 # Usage
 After installation, you can get ICH and IVH segmentation by following steps:
