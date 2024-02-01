@@ -2,11 +2,25 @@
 An Externally Validated Deep Learning Model for Segmentation of Intracerebral and Intraventricular Hemorrhage on Head CT and Segmentation Quality Assessment
 
 # Requirements
-Install [`nnU-Net`](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1), which is the framework for running REUnet.
+## REUnet
+REUnet relies on version 1.7.0 of [`nnUNet`](https://github.com/MIC-DKFZ/nnUNet/tree/v1.7.0), which is the framework for running REUnet.
 
+To install nnUNet version 1.7.0, use the following command to download nnUNet v1.7.0:
+
+`git clone --branch v1.7.0 --single-branch git@github.com:MIC-DKFZ/nnUNet.git`
+
+It is necessary to modify the default `setup.py` file of nnUnet. You can replace it by the provided setup file located at `REUnet/utils/nnU_setup_example/setup.py`.
+
+After that, you can follow [`nnUnet's instructions`](https://github.com/MIC-DKFZ/nnUNet/tree/v1.7.0) to install nnUNet.
+
+## StripSkullCT
 Download [`StripSkullCT`](https://github.com/WuChanada/StripSkullCT) for brain extraction.
 
-# Installation
+## Others
+You also need to install packages like `sklearn`, `matplotlib`, `tqdm`, etc.
+You can install those by `pip`.
+
+# Installation REUnet
 After installing `nnU-Net`, you can install `REUnet` by this command: `python ./install_REUnet.py`.
 
 # Getting REUnet trained models
