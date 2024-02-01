@@ -44,3 +44,12 @@ fold=FOLD  # choose from [0, 1, 2, 3, 4]
 
 nnUNet_predict_sam -i ${ip} -o ${op} -t 607 -m 3d_fullres -f ${fold} -chk model_best -tr nnUNetTrainerV2_REUNet -p nnUNetPlans_REUNet_v2.1 --save_npz
 ```
+
+# Segmentation Quality Assessment
+After get segmentation results, you can run following command to get quality assessment score:
+```
+# where ${op} is OUTPUT_FOLDER from above
+python ./REUnet/utils/segmentation_qc.py -d ${op}
+```
+A file called `segment_quality_score.csv` will be generated in the `${op}`, which records the segment quality assessment scores.
+
