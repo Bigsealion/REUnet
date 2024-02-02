@@ -42,6 +42,7 @@ ip=INPUT_FOLDER
 op=OUTPUT_FOLDER 
 fold=FOLD  # choose from [0, 1, 2, 3, 4]
 
+# nnUNet_predict_sam is a custom command, which will output Segmentability Ability Maps for quality assessment 
 nnUNet_predict_sam -i ${ip} -o ${op} -t 607 -m 3d_fullres -f ${fold} -chk model_best -tr nnUNetTrainerV2_REUNet -p nnUNetPlans_REUNet_v2.1 --save_npz
 ```
 
