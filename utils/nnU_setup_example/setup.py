@@ -17,8 +17,10 @@ setup(name='nnunet',
             "scipy",
             "batchgenerators>=0.23",
             "numpy",
-            # Please manual installation sklearn and matplotlib
-            #"sklearn",
+            # sklearn to scikit-learn
+            "scikit-learn",
+            # add matplotlib
+            "matplotlib",
             "SimpleITK",
             "pandas",
             "requests",

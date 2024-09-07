@@ -3,7 +3,6 @@ import nnunet
 import os
 import shutil
 import sys
-from setuptools import setup
 
 
 def copytree(src, dst, symlinks=False, ignore=None):
@@ -37,15 +36,6 @@ def main():
     print('REU_preprocessed_dir: {}'.format(REU_preprocessed_dir))
     # print('REU_trained_model_dir: {}'.format(REU_trained_model_dir))
     print('REUnet is installed')
-    
-    # setup new cmd
-    setup(
-        entry_points = {
-            "console_scripts": [
-                "nnUNet_predict_sam = nnunet.inference.predict_sam_simple:main"
-            ]
-        }
-    )
 
 
 if __name__ == '__main__':

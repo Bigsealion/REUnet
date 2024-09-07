@@ -29,7 +29,7 @@ def main():
     print('Temporary files will be downloaded to\n\t{}'.format(zip_download_path))
     print('And will be removed afterd unzip.')
     zip_download_path = download_zip_file(url, zip_download_path)
-    print('Temporary zip file downloaded， starting to Unzip...')
+    print('Temporary zip file downloaded, starting to Unzip...')
 
     # unzip
     assert os.path.isfile(zip_download_path), '{} Not a file!'.format(zip_download_path)
