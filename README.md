@@ -3,7 +3,7 @@ An Externally Validated Deep Learning Model for Segmentation of Intracerebral an
 
 # Requirements
 ## REUnet
-REUnet relies on version 1.7.0 of [`nnUNet`](https://github.com/MIC-DKFZ/nnUNet/tree/v1.7.0), which is the framework for running REUnet.
+REUnet relies on version 1.7.0 of [`nnUNet`](https://github.com/MIC-DKFZ/nnUNet/tree/v1.7.0), which is the framework for running REUnet. And the REUnet was tested based on `Python 3.9.7`.
 
 To install nnUNet version 1.7.0, use the following command to download nnUNet v1.7.0:
 
