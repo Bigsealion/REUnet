@@ -13,6 +13,8 @@ It is necessary to modify the default `setup.py` file of nnUnet. You can replace
 
 After that, you can follow [`nnUnet's instructions`](https://github.com/MIC-DKFZ/nnUNet/tree/v1.7.0) to install nnUNet.
 
+Note that the environment variables are required by nnUNet. You can refer to the setup instructions in the following [link](https://github.com/MIC-DKFZ/nnUNet/blob/v1.7.0/documentation/setting_up_paths.md).
+
 ## StripSkullCT
 Download [`StripSkullCT`](https://github.com/WuChanada/StripSkullCT) for brain extraction.
 
