@@ -1,6 +1,12 @@
 # REUnet
 Deep learning models for separate segmentations of intracerebral and intraventricular hemorrhage on head CT and segmentation quality assessment
 
+cite:
+
+```
+Li Y, Zhang R, Li Y, et al.Deep learning models for separate segmentations of intracerebral and intraventricular hemorrhage on head CT and segmentation quality assessment. Med Phys. 2024;1-17. https://doi.org/10.1002/mp.17343
+```
+
 # Requirements
 ## REUnet
 REUnet relies on version 1.7.0 of [`nnUNet`](https://github.com/MIC-DKFZ/nnUNet/tree/v1.7.0), which is the framework for running REUnet. And the REUnet was tested based on `Python 3.9.7`.
