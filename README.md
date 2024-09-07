@@ -38,8 +38,8 @@ After installation, you can get ICH and IVH segmentation by following steps:
 3. Running the following command:
 
  ```
-ip=INPUT_FOLDER 
-op=OUTPUT_FOLDER 
+ip=INPUT_FOLDER  # ./example_data/image_be is the INPUT_FOLDER for the example data
+op=OUTPUT_FOLDER  # User-defined path
 fold=FOLD  # choose from [0, 1, 2, 3, 4]
 
 # nnUNet_predict_sam is a custom command, which will output Segmentability Ability Maps for quality assessment 
@@ -50,7 +50,7 @@ nnUNet_predict_sam -i ${ip} -o ${op} -t 607 -m 3d_fullres -f ${fold} -chk model_
 After get segmentation results, you can run following command to get quality assessment score:
 ```
 # where ${op} is OUTPUT_FOLDER from above
-python ./REUnet/utils/segmentation_qc.py -d ${op}
+python ./utils/segmentation_qc.py -d ${op}
 ```
 A file called `segment_quality_score.csv` will be generated in the `${op}`, which records the segment quality assessment scores.
 
