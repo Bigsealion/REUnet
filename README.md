@@ -1,5 +1,5 @@
 # REUnet
-An Externally Validated Deep Learning Model for Segmentation of Intracerebral and Intraventricular Hemorrhage on Head CT and Segmentation Quality Assessment
+Deep learning models for separate segmentations of intracerebral and intraventricular hemorrhage on head CT and segmentation quality assessment
 
 # Requirements
 ## REUnet
